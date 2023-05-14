@@ -1,11 +1,11 @@
 // navbar
 let navBarMenu = document.querySelector('.navsecond-part');
-console.log(navBarMenu)
+
 let navBarMenuBtn = document.querySelector('.toggle-nav');
 
 const toggleNavOnClick = () => {
     const visibility = navBarMenu.getAttribute('data-visible');
-    console.log(visibility);
+
     if(visibility == "false"){
         navBarMenu.setAttribute('data-visible',"true");
         navBarMenu.setAttribute('aria-expanded',"true");
@@ -22,7 +22,7 @@ navBarMenuBtn.addEventListener('click',toggleNavOnClick);
 // accordian
 let btn = document.querySelectorAll('.accordian-trigger');
 let accordianContent = document.querySelectorAll('.accordian-content');
-console.log(btn,accordianContent);
+
 
 btn.forEach((_button,index)=>{
     btn[index].addEventListener('click',()=>{
